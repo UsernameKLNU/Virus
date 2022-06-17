@@ -17,15 +17,6 @@ def MakeError(error_show, exit_num):
     # """, 0xffffffff)
 
 
-def MakeErrorButDoNotExit(error_show):
-    print(colorama.Fore.RED + error_show + colorama.Fore.RESET)
-    # MakeError("""
-    # Traceback (most recent call last):
-    #   File "文件路径", line 行数, in <module>
-    #     代码块
-    # 错误的Exception: 详细错误
-    # """)
-
 
 def TestPlatform():
     print("关于 Virus")
