@@ -49,7 +49,7 @@ if start == "Y":
         print("(按 1 并按回车启动 Virus)", end='')
         virus_start = input()
         if virus_start == "1":
-        # 病毒要干什么... shh
+            # 病毒要干什么... shh
         else:
             MakeError("""
             Traceback (most recent call last):
